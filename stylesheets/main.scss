@@ -1,0 +1,132 @@
+main {
+	width: 100%;
+	margin: 0 auto;
+
+	section {
+		margin: 0 auto;
+	}
+}
+//Page Cover
+.pageCover {
+	position: relative;
+    right: 0;
+    top: 0;
+    height: 100vh;
+	box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.16);
+    overflow: hidden;
+    z-index: 2;
+}
+.coverContent {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 20;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+    padding: 0 48px;
+	.logo-img {
+		position: absolute;
+		top: 22vh;
+		width: 100%;
+		padding: 24px;
+		img {
+			margin: 0 auto;
+			height: 25vh;
+		}
+	}
+	.coverContentBottom {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		
+		margin: 0 auto;
+		a 		{color: $light;}	
+		a:hover {color: $light;}
+		.videoPlay {
+			font-family: "Bitter";
+			font-weight: 400;
+			font-size: 30px;
+			img {
+				padding-bottom: 8px;
+			}
+		}
+		.arrowDown {
+			img {
+				padding-top: 32px;
+				width: 64px;
+				padding-bottom: 24px;
+			}
+		}
+		
+	}
+}
+.coverVideo {
+	background-image: url();
+    left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    filter: blur(4px);
+    video {
+    	filter:opacity(60%);
+    	max-width: none;
+    	min-width: 100%;
+    	min-height: 100vh;
+    }
+}
+
+//About The Game
+#about-the-game {
+	span {
+		color: $active;
+	}
+}
+//vendor
+#vendors {
+	span {
+		color: $active;
+	}
+}
+.vendorbtn {
+	height: 64px; 
+	width: 279px; 
+	display: block;
+	border-radius: 32px;
+	display: block;
+	margin: 12px 24px;
+	background-color: $active;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	p {
+		font-size: 30px;
+		text-align: center;
+		color: white;
+		padding: 12px;
+		margin: 0 auto;
+		font-family: Bitter;
+		height: 100%;
+	}
+}
+.vendorbtn:hover {
+	pointer: none;
+	filter: greyscale(0.5);
+}
+
+.steam {
+	background-color: #00AEEF;
+}
+.itch {
+	background-color: #FA5C5C;
+}
+
+//screenshots
+#screenshots{
+	#gallery-1 img {
+		border: none;
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	}
+}
